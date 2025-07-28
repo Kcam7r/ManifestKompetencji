@@ -187,7 +187,7 @@ const CVContent = () => {
               <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
                 <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zwiększenie konwersji i skrócenie procesu sprzedaży dla firmy usługowej.</p>
                 <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzyłem w pełni działający, interaktywny prototyp systemu rezerwacji, który automatyzuje proces wstępnej wyceny i zapisu klientów.</p>
-                <strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Błyskawiczna egzekucja od pomysłu do działającego produktu, umiejętności frontendowe (HTML/CSS/JS) i projektowanie intuicyjnych interfejsów.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Błyskawiczna egzekucja od pomysłu do działającego produktu, umiejętności frontendowe (HTML/CSS/JS) i projektowanie intuicyjnych interfejsów.</p>
               </CardContent>
             </Card>
           </DialogTrigger>
