@@ -73,6 +73,7 @@ const CVContent = () => {
             <div className="flex justify-center mb-6">
               <img src="/images/asystent.png" alt="Asystent AI" className="max-w-full h-auto rounded-lg shadow-md" />
             </div>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-4 text-center">Prompt:</h3>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg font-mono text-sm text-gray-800 dark:text-gray-200 leading-relaxed space-y-6">
               <div>
                 <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-2">TOŻSAMOŚĆ:</h3>
