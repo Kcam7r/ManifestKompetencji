@@ -3,13 +3,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { MadeWithDyad } from "@/components/made-with-dyad";
+import { ThemeToggle } from "@/components/ThemeToggle"; // Import ThemeToggle
 
 const CVContent = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl bg-white dark:bg-gray-950 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800">
+    <div className="container mx-auto px-4 py-8 max-w-4xl bg-white dark:bg-gray-950 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 relative"> {/* Added relative for positioning */}
+      {/* Theme Toggle Button */}
+      <div className="absolute top-4 right-4">
+        <ThemeToggle />
+      </div>
+
       {/* Header Section */}
       <div className="flex flex-col items-center text-center mb-10 space-y-4">
-        <Avatar className="w-48 h-48 mb-4 border-4 border-blue-600 dark:border-blue-400 shadow-lg"> {/* Added shadow-lg here */}
+        <Avatar className="w-48 h-48 mb-4 border-4 border-blue-600 dark:border-blue-400 shadow-lg">
           <AvatarImage src="/images/kamil-robak-profile.png" alt="Kamil Robak" className="scale-110 object-cover" />
           <AvatarFallback className="text-6xl font-bold bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300">KR</AvatarFallback>
         </Avatar>
@@ -22,7 +28,7 @@ const CVContent = () => {
       <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
 
       {/* Professional Profile */}
-      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
         <CardHeader className="pb-4">
           <CardTitle className="text-3xl font-bold text-gray-800 dark:text-gray-100">Profil Zawodowy</CardTitle>
         </CardHeader>
@@ -43,7 +49,7 @@ const CVContent = () => {
 
       <div className="grid gap-8 md:grid-cols-1">
         {/* Case Study 1 */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">1. Projekt "Asystent Eksperta AI" (Architektura Systemu i Backend)</CardTitle>
           </CardHeader>
@@ -55,7 +61,7 @@ const CVContent = () => {
         </Card>
 
         {/* Case Study 2 */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">2. Projekt "Interaktywny Prototyp Sprzedażowy" (Frontend i UX)</CardTitle>
           </CardHeader>
@@ -67,7 +73,7 @@ const CVContent = () => {
         </Card>
 
         {/* Case Study 3 */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">3. Projekt "Eksperci od Klimatyzacji" (Kompleksowa Aplikacja Webowa Full-Stack)</CardTitle>
           </CardHeader>
@@ -79,7 +85,7 @@ const CVContent = () => {
         </Card>
 
         {/* Case Study 4 - New Project */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">4. Projekt "ADHiDe" (Gamifikowany System Produktywności)</CardTitle>
           </CardHeader>
@@ -91,7 +97,7 @@ const CVContent = () => {
         </Card>
 
         {/* Case Study 5 (formerly Case Study 4) */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">5. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
           </CardHeader>
@@ -106,7 +112,7 @@ const CVContent = () => {
       <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
 
       {/* Collaboration Model */}
-      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
         <CardHeader className="pb-4">
           <CardTitle className="text-3xl font-bold text-gray-800 dark:text-gray-100">Model Współpracy</CardTitle>
         </CardHeader>
@@ -120,7 +126,7 @@ const CVContent = () => {
       <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
 
       {/* Contact Section */}
-      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
         <CardHeader className="pb-4">
           <CardTitle className="text-3xl font-bold text-gray-800 dark:text-gray-100">Kontakt</CardTitle>
         </CardHeader>
