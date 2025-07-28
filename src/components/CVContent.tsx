@@ -66,7 +66,7 @@ const CVContent = () => {
           </CardContent>
         </Card>
 
-        {/* Case Study 3 - New Project */}
+        {/* Case Study 3 */}
         <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">3. Projekt "Eksperci od Klimatyzacji" (Kompleksowa Aplikacja Webowa Full-Stack)</CardTitle>
@@ -78,10 +78,22 @@ const CVContent = () => {
           </CardContent>
         </Card>
 
-        {/* Case Study 4 (formerly Case Study 3) */}
+        {/* Case Study 4 - New Project */}
         <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
           <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">4. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">4. Projekt "ADHiDe" (Gamifikowany System Produktywności)</CardTitle>
+          </CardHeader>
+          <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
+            <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Stworzenie angażującego narzędzia dla osób z ADHD, które wykracza poza standardowe listy "to-do".</p>
+            <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> W pełni funkcjonalna aplikacja webowa (React, TypeScript) z systemem gamifikacji (XP, poziomy), zarządzaniem zadaniami i dziennikiem analitycznym nastroju.</p>
+            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Zaawansowany Frontend (React, TypeScript), Projektowanie UI/UX i Gamifikacji, Zarządzanie Stanem Aplikacji.</p>
+          </CardContent>
+        </Card>
+
+        {/* Case Study 5 (formerly Case Study 4) */}
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+          <CardHeader className="pb-4">
+            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">5. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
           </CardHeader>
           <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
             <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zdiagnozowanie i stworzenie systemu do zarządzania złożonymi wzorcami poznawczymi.</p>
