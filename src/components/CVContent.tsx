@@ -55,7 +55,8 @@ const CVContent = () => {
       <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
 
       {/* Selected Case Studies */}
-      <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-50 mb-8 text-center">Wybrane Studia Przypadku</h2>
+      <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4 text-center">Wybrane Studia Przypadku</h2>
+      <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 text-center">Kliknij w projekt, aby poznać szczegóły.</p>
 
       <div className="grid gap-8 md:grid-cols-1">
         {/* Case Study 1 */}
@@ -186,7 +187,7 @@ const CVContent = () => {
               <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
                 <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zwiększenie konwersji i skrócenie procesu sprzedaży dla firmy usługowej.</p>
                 <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzyłem w pełni działający, interaktywny prototyp systemu rezerwacji, który automatyzuje proces wstępnej wyceny i zapisu klientów.</p>
-                <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Błyskawiczna egzekucja od pomysłu do działającego produktu, umiejętności frontendowe (HTML/CSS/JS) i projektowanie intuicyjnych interfejsów.</p>
+                <strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Błyskawiczna egzekucja od pomysłu do działającego produktu, umiejętności frontendowe (HTML/CSS/JS) i projektowanie intuicyjnych interfejsów.</p>
               </CardContent>
             </Card>
           </DialogTrigger>
