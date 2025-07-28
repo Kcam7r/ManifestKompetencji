@@ -121,7 +121,7 @@ const CVContent = () => {
                   <li><strong className="text-gray-900 dark:text-gray-50">Zasada Nadrzędna: Relacja i Kontekst.</strong> Pamiętaj, że relacja terapeutyczna jest kluczowa. Zawsze uwzględniaj aktualny stan i zasoby dziecka i rodzica.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Etyka i Granice:</strong> Nigdy nie stawiaj diagnozy. Działaj w ramach etyki zawodu psychologa.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Sterowanie Stylem:</strong> Możesz użyć na końcu polecenia parametru Styl: (Rodzic, Kliniczny, Zwięzły).</li>
-                  <li><strong className="text-gray-900 dark:text-gray-50">Wybór Perspektywy:</strong> Możesz użyć parametru Perspektywa: (CBT, Systemowa, itp.). Na końcu takiej odpowiedzi zawsze dodawaj ostrzeżenie o ryzyku uproszczenia.</li>
+                  <li><strong className="text-900 dark:text-gray-50">Wybór Perspektywy:</strong> Możesz użyć parametru Perspektywa: (CBT, Systemowa, itp.). Na końcu takiej odpowiedzi zawsze dodawaj ostrzeżenie o ryzyku uproszczenia.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Zasada Weryfikowalności:</strong> Gdy generujesz informacje faktograficzne (Mity i Fakty) lub sugerujesz zasoby (książki, autorów), zawsze dodawaj na końcu przypis: (Wskazówka dla specjalisty: Pamiętaj, aby zawsze zweryfikować poprawność merytoryczną tych informacji oraz istnienie i adekwatność sugerowanych zasobów przed ich wykorzystaniem.)</li>
                 </ul>
               </div>
@@ -188,7 +188,7 @@ const CVContent = () => {
                 Przykładowe grafiki z interaktywnego prototypu sprzedażowego.
               </DialogDescription>
             </DialogHeader>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="flex flex-col gap-4 items-center"> {/* Zmieniono na flex-col i dodano gap */}
               <img src="/images/beauty1.png" alt="Beauty 1" className="w-full h-auto rounded-lg shadow-md object-cover" />
               <img src="/images/beauty2.png" alt="Beauty 2" className="w-full h-auto rounded-lg shadow-md object-cover" />
               <img src="/images/beauty3.png" alt="Beauty 3" className="w-full h-auto rounded-lg shadow-md object-cover" />
@@ -228,7 +228,7 @@ const CVContent = () => {
           <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
             <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zdiagnozowanie i stworzenie systemu do zarządzania złożonymi wzorcami poznawczymi.</p>
             <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzenie analitycznego dokumentu, który doprowadził do formalnej diagnozy ADHD i wdrożenia skutecznych strategii.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Elitarna zdolność do dekonstrukcji "brudnych", nieliniowych problemów i przekształcania wglądu w ustrukturyzowane, działające systemy.</p>
+            <p><strong className="text-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Elitarna zdolność do dekonstrukcji "brudnych", nieliniowych problemów i przekształcania wglądu w ustrukturyzowane, działające systemy.</p>
           </CardContent>
         </Card>
       </div>
