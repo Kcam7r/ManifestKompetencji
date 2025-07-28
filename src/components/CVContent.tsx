@@ -247,16 +247,62 @@ const CVContent = () => {
         </Dialog>
 
         {/* Case Study 5 (formerly Case Study 4) */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">5. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
-          </CardHeader>
-          <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
-            <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zdiagnozowanie i stworzenie systemu do zarządzania złożonymi wzorcami poznawczymi.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzenie analitycznego dokumentu, który doprowadził do formalnej diagnozy ADHD i wdrożenia skutecznych strategii.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Elitarna zdolność do dekonstrukcji "brudnych", nieliniowych problemów i przekształcania wglądu w ustrukturyzowane, działające systemy.</p>
-          </CardContent>
-        </Card>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005] cursor-pointer">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">5. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
+              </CardHeader>
+              <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
+                <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zdiagnozowanie i stworzenie systemu do zarządzania złożonymi wzorcami poznawczymi.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzenie analitycznego dokumentu, który doprowadził do formalnej diagnozy ADHD i wdrożenia skutecznych strategii.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Elitarna zdolność do dekonstrukcji "brudnych", nieliniowych problemów i przekształcania wglądu w ustrukturyzowane, działające systemy.</p>
+              </CardContent>
+            </Card>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[800px] max-h-[90vh] overflow-y-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-2xl">
+            <DialogHeader className="mb-4">
+              <DialogTitle className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center">Projekt "Operator's Manual"</DialogTitle>
+              <DialogDescription className="text-center text-gray-600 dark:text-gray-400">
+                Szczegółowy opis dekonstrukcji problemu i specyfikacji systemu operacyjnego.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg space-y-6 text-justify">
+              <p>
+                Analityk systemowy z rzadką zdolnością do dekonstrukcji złożonych, nieefektywnych systemów – od procesów biznesowych po psychologię użytkownika. Moją pasją jest identyfikowanie ukrytych, fundamentalnych zasad rządzących danym problemem, a następnie projektowanie innowacyjnych, opartych na danych rozwiązań, które przynoszą mierzalne rezultaty.
+              </p>
+              <p>
+                Nie jestem typowym programistą. Działam jako Orkiestrator AI – używam zaawansowanych modeli językowych jako zespołu wirtualnych ekspertów, by w rekordowym czasie budować działające prototypy i automatyzować złożone przepływy pracy.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-8 mb-4 text-center">Specyfikacja Systemu Operacyjnego</h3>
+              <p>
+                Moje funkcjonowanie opiera się na neuroatypowej strukturze poznawczej (ADHD), co przekłada się na unikalny styl pracy i myślenia.
+              </p>
+              <ul className="list-disc list-inside ml-4 space-y-2">
+                <li>
+                  <strong className="text-gray-900 dark:text-gray-50">Tryb "Myśliwego":</strong> Jestem zoptymalizowany do krótkich, intensywnych "sprintów" i pracy w stanie hyperfocus, gdy mam przed sobą jasno zdefiniowaną, fascynującą misję. Posiadam zdolność do nieliniowego myślenia i łączenia nieoczywistych koncepcji w celu znalezienia przełomowych rozwiązań.
+                </li>
+                <li>
+                  <strong className="text-gray-900 dark:text-gray-50">Awersja do Monotonii:</strong> Mam niską tolerancję na zadania powtarzalne, administracyjne i pozbawione wyzwania intelektualnego. Takie środowisko prowadzi u mnie do spadku motywacji i poczucia "pustki".
+                </li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-8 mb-4 text-center">Kluczowe Schematy i Kompetencje</h3>
+              <ul className="list-disc list-inside ml-4 space-y-2">
+                <li>
+                  <strong className="text-gray-900 dark:text-gray-50">Paradoks Architekta:</strong> Czerpię ogromną satysfakcję z fazy projektowania i tworzenia eleganckich systemów. Jednocześnie, moją kluczową kompetencją, nad którą nieustannie pracuję, jest przełamywanie awersji do "tarcia" w fazie wdrożenia, by doprowadzać projekty do końca.
+                </li>
+                <li>
+                  <strong className="text-gray-900 dark:text-gray-50">Intelektualizacja jako Narzędzie:</strong> W obliczu złożonych, emocjonalnych problemów, moim naturalnym odruchem jest przekształcanie ich w problemy analityczne. Pozwala mi to na zachowanie obiektywizmu i projektowanie logicznych rozwiązań tam, gdzie inni ulegają chaosowi.
+                </li>
+                <li>
+                  <strong className="text-gray-900 dark:text-gray-50">Empatia Analityczna:</strong> Posiadam wysoką zdolność do rozumienia i dekonstruowania motywacji oraz problemów innych ludzi na poziomie systemowym. Pozwala mi to na projektowanie rozwiązań, które są nie tylko funkcjonalne, ale i głęboko rezonują z potrzebami użytkownika końcowego.
+                </li>
+              </ul>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
 
       <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
