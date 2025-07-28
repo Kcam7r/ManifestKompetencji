@@ -9,7 +9,7 @@ const CVContent = () => {
     <div className="container mx-auto px-4 py-8 max-w-4xl bg-white dark:bg-gray-950 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800">
       {/* Header Section */}
       <div className="flex flex-col items-center text-center mb-10 space-y-4">
-        <Avatar className="w-48 h-48 mb-4 border-4 border-blue-600 dark:border-blue-400 shadow-lg">
+        <Avatar className="w-48 h-48 mb-4 border-4 border-blue-600 dark:border-blue-400 shadow-lg"> {/* Added shadow-lg here */}
           <AvatarImage src="/images/kamil-robak-profile.png" alt="Kamil Robak" className="scale-110 object-cover" />
           <AvatarFallback className="text-6xl font-bold bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300">KR</AvatarFallback>
         </Avatar>
