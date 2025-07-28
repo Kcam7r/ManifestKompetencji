@@ -168,16 +168,33 @@ const CVContent = () => {
         </Dialog>
 
         {/* Case Study 2 */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">2. Projekt "Interaktywny Prototyp Sprzedażowy" (Frontend i UX)</CardTitle>
-          </CardHeader>
-          <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
-            <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zwiększenie konwersji i skrócenie procesu sprzedaży dla firmy usługowej.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzyłem w pełni działający, interaktywny prototyp systemu rezerwacji, który automatyzuje proces wstępnej wyceny i zapisu klientów.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Błyskawiczna egzekucja od pomysłu do działającego produktu, umiejętności frontendowe (HTML/CSS/JS) i projektowanie intuicyjnych interfejsów.</p>
-          </CardContent>
-        </Card>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005] cursor-pointer">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">2. Projekt "Interaktywny Prototyp Sprzedażowy" (Frontend i UX)</CardTitle>
+              </CardHeader>
+              <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
+                <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zwiększenie konwersji i skrócenie procesu sprzedaży dla firmy usługowej.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzyłem w pełni działający, interaktywny prototyp systemu rezerwacji, który automatyzuje proces wstępnej wyceny i zapisu klientów.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Błyskawiczna egzekucja od pomysłu do działającego produktu, umiejętności frontendowe (HTML/CSS/JS) i projektowanie intuicyjnych interfejsów.</p>
+              </CardContent>
+            </Card>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[800px] max-h-[90vh] overflow-y-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-2xl">
+            <DialogHeader className="mb-4">
+              <DialogTitle className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center">Projekt "Interaktywny Prototyp Sprzedażowy"</DialogTitle>
+              <DialogDescription className="text-center text-gray-600 dark:text-gray-400">
+                Przykładowe grafiki z interaktywnego prototypu sprzedażowego.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <img src="/images/beauty1.png" alt="Beauty 1" className="w-full h-auto rounded-lg shadow-md object-cover" />
+              <img src="/images/beauty2.png" alt="Beauty 2" className="w-full h-auto rounded-lg shadow-md object-cover" />
+              <img src="/images/beauty3.png" alt="Beauty 3" className="w-full h-auto rounded-lg shadow-md object-cover" />
+            </div>
+          </DialogContent>
+        </Dialog>
 
         {/* Case Study 3 */}
         <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
