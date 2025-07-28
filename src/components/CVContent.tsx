@@ -206,16 +206,31 @@ const CVContent = () => {
         </Dialog>
 
         {/* Case Study 3 */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">3. Projekt "Eksperci od Klimatyzacji" (Kompleksowa Aplikacja Webowa Full-Stack)</CardTitle>
-          </CardHeader>
-          <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
-            <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Stworzenie wszechstronnej platformy online dla firmy klimatyzacyjnej, integrującej interaktywne narzędzia dla klientów z zaawansowanym panelem administracyjnym.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Zaprojektowałem i wdrożyłem pełną aplikację webową (React.js, TypeScript, Node.js, Express.js, PostgreSQL/Supabase), zawierającą publiczny serwis z kalkulatorem cen i porównywarką modeli, oraz rozbudowany CMS do zarządzania treścią bloga, formularzami i zgłoszeniami serwisowymi, w tym obsługą załączników.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Rozwój full-stack, integracja z bazą danych (Supabase), budowa niestandardowego CMS i implementacja interaktywnych narzędzi użytkownika.</p>
-          </CardContent>
-        </Card>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005] cursor-pointer">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">3. Projekt "Eksperci od Klimatyzacji" (Kompleksowa Aplikacja Webowa Full-Stack)</CardTitle>
+              </CardHeader>
+              <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
+                <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Stworzenie wszechstronnej platformy online dla firmy klimatyzacyjnej, integrującej interaktywne narzędzia dla klientów z zaawansowanym panelem administracyjnym.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Zaprojektowałem i wdrożyłem pełną aplikację webową (React.js, TypeScript, Node.js, Express.js, PostgreSQL/Supabase), zawierającą publiczny serwis z kalkulatorem cen i porównywarką modeli, oraz rozbudowany CMS do zarządzania treścią bloga, formularzami i zgłoszeniami serwisowymi, w tym obsługą załączników.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Rozwój full-stack, integracja z bazą danych (Supabase), budowa niestandardowego CMS i implementacja interaktywnych narzędzi użytkownika.</p>
+              </CardContent>
+            </Card>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[800px] max-h-[90vh] overflow-y-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-2xl">
+            <DialogHeader className="mb-4">
+              <DialogTitle className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center">Projekt "Eksperci od Klimatyzacji"</DialogTitle>
+              <DialogDescription className="text-center text-gray-600 dark:text-gray-400">
+                Przykładowe grafiki z projektu "Eksperci od Klimatyzacji".
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col gap-4 items-center">
+              <img src="/images/wklimacie.png" alt="Eksperci od Klimatyzacji" className="w-full h-auto rounded-lg shadow-md object-cover" />
+            </div>
+          </DialogContent>
+        </Dialog>
 
         {/* Case Study 4 - New Project */}
         <Dialog>
