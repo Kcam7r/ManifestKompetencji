@@ -31,7 +31,7 @@ const CVContent = () => {
         </Avatar>
         <h1 className="text-5xl font-extrabold text-gray-900 dark:text-gray-50 leading-tight">Kamil Robak</h1>
         <p className="text-2xl text-blue-700 dark:text-blue-400 font-semibold max-w-2xl">
-          Architekt Systemów AI | Specjalista ds. "Vibecodingu" i Szybkiego Prototypowania MVP
+          Architekt Systemów AI <br /> Specjalista ds. "Vibecodingu" i Szybkiego Prototypowania MVP
         </p>
       </div>
 
