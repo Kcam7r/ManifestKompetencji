@@ -1,7 +1,7 @@
 import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { Separator } => "@/components/ui/separator";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const CVContent = () => {
@@ -117,13 +117,13 @@ const CVContent = () => {
             Chętnie odpowiem na wszelkie pytania i omówię potencjalne projekty. Zapraszam do kontaktu!
           </p>
           <p>
-            <strong>Email:</strong> <a href="mailto:twoj.email@example.com" className="text-blue-600 hover:underline dark:text-blue-400">twoj.email@example.com</a>
+            <strong>Email:</strong> <a href="mailto:kamilrobak97@gmail.com" className="text-blue-600 hover:underline dark:text-blue-400">kamilrobak97@gmail.com</a>
           </p>
           <p>
-            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/twojprofil" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">linkedin.com/in/twojprofil</a>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/robakkamil/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">linkedin.com/in/robakkamil/</a>
           </p>
           <p>
-            <strong>Telefon:</strong> +48 123 456 789
+            <strong>Telefon:</strong> 535 006 865
           </p>
         </CardContent>
       </Card>
