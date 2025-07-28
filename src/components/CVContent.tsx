@@ -253,6 +253,7 @@ const CVContent = () => {
               <DialogDescription className="text-center text-gray-600 dark:text-gray-400">
                 Przykładowe grafiki z gamifikowanego systemu produktywności ADHiDe.
               </DialogDescription>
+            </DialogDescription>
             </DialogHeader>
             <div className="flex flex-col gap-4 items-center">
               <img src="/images/ADHiDe1.png" alt="ADHiDe 1" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/ADHiDe1.png")} />
