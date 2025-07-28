@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -12,6 +12,14 @@ import {
 } from "@/components/ui/dialog";
 
 const CVContent = () => {
+  const [selectedImageSrc, setSelectedImageSrc] = useState<string | null>(null);
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+
+  const handleImageClick = (src: string) => {
+    setSelectedImageSrc(src);
+    setIsImageModalOpen(true);
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl bg-white dark:bg-gray-950 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 relative">
       {/* Header Section */}
@@ -188,10 +196,10 @@ const CVContent = () => {
                 Przykładowe grafiki z interaktywnego prototypu sprzedażowego.
               </DialogDescription>
             </DialogHeader>
-            <div className="flex flex-col gap-4 items-center"> {/* Zmieniono na flex-col i dodano gap */}
-              <img src="/images/beauty1.png" alt="Beauty 1" className="w-full h-auto rounded-lg shadow-md object-cover" />
-              <img src="/images/beauty2.png" alt="Beauty 2" className="w-full h-auto rounded-lg shadow-md object-cover" />
-              <img src="/images/beauty3.png" alt="Beauty 3" className="w-full h-auto rounded-lg shadow-md object-cover" />
+            <div className="flex flex-col gap-4 items-center">
+              <img src="/images/beauty1.png" alt="Beauty 1" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/beauty1.png")} />
+              <img src="/images/beauty2.png" alt="Beauty 2" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/beauty2.png")} />
+              <img src="/images/beauty3.png" alt="Beauty 3" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/beauty3.png")} />
             </div>
           </DialogContent>
         </Dialog>
@@ -230,9 +238,9 @@ const CVContent = () => {
               </DialogDescription>
             </DialogHeader>
             <div className="flex flex-col gap-4 items-center">
-              <img src="/images/ADHiDe1.png" alt="ADHiDe 1" className="w-full h-auto rounded-lg shadow-md object-cover" />
-              <img src="/images/ADHiDe2.png" alt="ADHiDe 2" className="w-full h-auto rounded-lg shadow-md object-cover" />
-              <img src="/images/ADHiDe3.png" alt="ADHiDe 3" className="w-full h-auto rounded-lg shadow-md object-cover" />
+              <img src="/images/ADHiDe1.png" alt="ADHiDe 1" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/ADHiDe1.png")} />
+              <img src="/images/ADHiDe2.png" alt="ADHiDe 2" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/ADHiDe2.png")} />
+              <img src="/images/ADHiDe3.png" alt="ADHiDe 3" className="w-full h-auto rounded-lg shadow-md object-cover cursor-pointer" onClick={() => handleImageClick("/images/ADHiDe3.png")} />
             </div>
           </DialogContent>
         </Dialog>
@@ -286,6 +294,19 @@ const CVContent = () => {
           </p>
         </CardContent>
       </Card>
+
+      {/* Full-screen Image Modal */}
+      <Dialog open={isImageModalOpen} onOpenChange={setIsImageModalOpen}>
+        <DialogContent className="max-w-full h-screen flex items-center justify-center p-0 bg-black/80 border-none">
+          {selectedImageSrc && (
+            <img
+              src={selectedImageSrc}
+              alt="Powiększony obraz"
+              className="max-w-[90vw] max-h-[90vh] object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
