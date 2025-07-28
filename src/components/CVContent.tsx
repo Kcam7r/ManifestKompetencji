@@ -9,6 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose, // Import DialogClose
 } from "@/components/ui/dialog";
 
 const CVContent = () => {
@@ -129,7 +130,7 @@ const CVContent = () => {
                   <li><strong className="text-gray-900 dark:text-gray-50">Zasada Nadrzędna: Relacja i Kontekst.</strong> Pamiętaj, że relacja terapeutyczna jest kluczowa. Zawsze uwzględniaj aktualny stan i zasoby dziecka i rodzica.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Etyka i Granice:</strong> Nigdy nie stawiaj diagnozy. Działaj w ramach etyki zawodu psychologa.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Sterowanie Stylem:</strong> Możesz użyć na końcu polecenia parametru Styl: (Rodzic, Kliniczny, Zwięzły).</li>
-                  <li><strong className="text-gray-900 dark:text-gray-50">Wybór Perspektywy:</strong> Możesz użyć parametru Perspektywa: (CBT, Systemowa, itp.). Na końcu takiej odpowiedzi zawsze dodawaj ostrzeżenie o ryzyku uproszczenia.</li>
+                  <li><strong className="text-900 dark:text-gray-50">Wybór Perspektywy:</strong> Możesz użyć parametru Perspektywa: (CBT, Systemowa, itp.). Na końcu takiej odpowiedzi zawsze dodawaj ostrzeżenie o ryzyku uproszczenia.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Zasada Weryfikowalności:</strong> Gdy generujesz informacje faktograficzne (Mity i Fakty) lub sugerujesz zasoby (książki, autorów), zawsze dodawaj na końcu przypis: (Wskazówka dla specjalisty: Pamiętaj, aby zawsze zweryfikować poprawność merytoryczną tych informacji oraz istnienie i adekwatność sugerowanych zasobów przed ich wykorzystaniem.)</li>
                 </ul>
               </div>
@@ -297,14 +298,22 @@ const CVContent = () => {
 
       {/* Full-screen Image Modal */}
       <Dialog open={isImageModalOpen} onOpenChange={setIsImageModalOpen}>
-        <DialogContent className="max-w-full h-screen flex items-center justify-center p-0 bg-black/80 border-none">
+        <DialogContent
+          className="max-w-full h-screen flex items-center justify-center p-0 bg-black/80 border-none"
+          onClick={() => setIsImageModalOpen(false)} // Zamyka modal po kliknięciu na tło
+        >
           {selectedImageSrc && (
             <img
               src={selectedImageSrc}
               alt="Powiększony obraz"
               className="max-w-[90vw] max-h-[90vh] object-contain"
+              onClick={(e) => e.stopPropagation()} // Zapobiega zamknięciu modalu po kliknięciu na obraz
             />
           )}
+          {/* Bardziej widoczny przycisk zamykania */}
+          <DialogClose className="absolute top-4 right-4 text-white text-4xl font-bold z-10 opacity-70 hover:opacity-100 transition-opacity">
+            &times;
+          </DialogClose>
         </DialogContent>
       </Dialog>
     </div>
