@@ -24,7 +24,7 @@ const CVContent = () => {
       {/* Professional Profile */}
       <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
         <CardHeader className="pb-4">
-          <CardTitle className="text-3xl font-bold text-gray-800 dark:text-gray-100">Profil Zawodowy (Twoja Filozofia)</CardTitle>
+          <CardTitle className="text-3xl font-bold text-gray-800 dark:text-gray-100">Profil Zawodowy</CardTitle>
         </CardHeader>
         <CardContent className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg space-y-4 text-justify">
           <p>
@@ -39,7 +39,7 @@ const CVContent = () => {
       <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
 
       {/* Selected Case Studies */}
-      <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-50 mb-8 text-center">Wybrane Studia Przypadku (Dowody Kompetencji w "Vibecodingu")</h2>
+      <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-50 mb-8 text-center">Wybrane Studia Przypadku</h2>
 
       <div className="grid gap-8 md:grid-cols-1">
         {/* Case Study 1 */}
