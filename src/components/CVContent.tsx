@@ -100,7 +100,7 @@ const CVContent = () => {
         </CardHeader>
         <CardContent className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg text-justify">
           <p>
-            Nie szukam pracy "na godzinę". Szukam partnera do budowy innowacyjnych produktów cyfrowych. Specjalizuję się w krótkich, intensywnych "sprintach", których celem jest dostarczenie działającego, wysokiej jakości MVP w 7-14 dni.
+            Specjalizuję się w krótkich, intensywnych "sprintach strategicznych", których celem jest dostarczenie maksymalnej wartości w minimalnym czasie – od audytu i diagnozy problemu po stworzenie działającego prototypu rozwiązania.
           </p>
         </CardContent>
       </Card>
