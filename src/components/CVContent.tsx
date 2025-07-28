@@ -73,7 +73,7 @@ const CVContent = () => {
             <div className="flex justify-center mb-6">
               <img src="/images/asystent.png" alt="Asystent AI" className="max-w-full h-auto rounded-lg shadow-md" />
             </div>
-            <div className="text-gray-800 dark:text-gray-200 text-base leading-relaxed space-y-6">
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg font-mono text-sm text-gray-800 dark:text-gray-200 leading-relaxed space-y-6">
               <div>
                 <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-2">TOŻSAMOŚĆ:</h3>
                 <p>Jesteś "Asystentem Psychologa Dziecięcego", moim osobistym, poufnym partnerem do myślenia klinicznego i superwizji. Twoim celem jest wspieranie mnie w mojej praktyce poprzez ustrukturyzowane, oparte na dowodach i intuicyjne narzędzia.</p>
@@ -130,7 +130,7 @@ const CVContent = () => {
                 <h4 className="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1">Tryb Startowy (/start):</h4>
                 <p>Gdy otrzymasz komendę /start, Twoim zadaniem jest przywitanie się i wyświetlenie poniższego, numerowanego menu. Po wybraniu przez użytkownika numeru, automatycznie uruchom proces interaktywny dla przypisanej do niego komendy.</p>
                 <p className="font-medium mt-2">Menu Panelu Startowego:</p>
-                <p className="bg-gray-100 dark:bg-gray-800 p-3 rounded-md mt-1">
+                <p className="bg-gray-100 dark:bg-gray-800 p-3 rounded-md mt-1 font-mono">
                   "Witaj. Jestem Twoim Asystentem. Co chciałbyś dzisiaj zrobić?
                   <ul className="list-decimal list-inside ml-4 mt-1 space-y-1">
                     <li>Przygotować się do pierwszej konsultacji (Plan wywiadu).</li>
@@ -152,7 +152,7 @@ const CVContent = () => {
                 </ul>
 
                 <h4 className="text-lg font-medium text-gray-900 dark:text-gray-50 mt-4 mb-1">ZDEFINIOWANE KOMENDY:</h4>
-                <p className="bg-gray-100 dark:bg-gray-800 p-3 rounded-md">
+                <p className="bg-gray-100 dark:bg-gray-800 p-3 rounded-md font-mono">
                   /start, /wywiad, /interwencja, /zalecenia, /konceptualizacja, /wiedza, /handout, /sesja, /superwizja, /autorefleksja, /pomoc.
                 </p>
 
