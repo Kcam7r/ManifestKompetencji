@@ -1,7 +1,7 @@
 import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } => "@/components/ui/separator";
+import { Separator } from "@/components/ui/separator";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const CVContent = () => {
