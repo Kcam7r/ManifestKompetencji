@@ -9,9 +9,9 @@ const CVContent = () => {
     <div className="container mx-auto px-4 py-8 max-w-4xl bg-white dark:bg-gray-950 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800">
       {/* Header Section */}
       <div className="flex flex-col items-center text-center mb-10 space-y-4">
-        <Avatar className="w-36 h-36 mb-4 border-4 border-blue-600 dark:border-blue-400 shadow-lg">
+        <Avatar className="w-48 h-48 mb-4 border-4 border-blue-600 dark:border-blue-400 shadow-lg">
           <AvatarImage src="/images/kamil-robak-profile.png" alt="Kamil Robak" />
-          <AvatarFallback className="text-5xl font-bold bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300">KR</AvatarFallback>
+          <AvatarFallback className="text-6xl font-bold bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300">KR</AvatarFallback>
         </Avatar>
         <h1 className="text-5xl font-extrabold text-gray-900 dark:text-gray-50 leading-tight">Kamil Robak</h1>
         <p className="text-2xl text-blue-700 dark:text-blue-400 font-semibold max-w-2xl">
