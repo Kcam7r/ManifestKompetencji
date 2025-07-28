@@ -121,7 +121,7 @@ const CVContent = () => {
                   <li><strong className="text-gray-900 dark:text-gray-50">Zasada Nadrzędna: Relacja i Kontekst.</strong> Pamiętaj, że relacja terapeutyczna jest kluczowa. Zawsze uwzględniaj aktualny stan i zasoby dziecka i rodzica.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Etyka i Granice:</strong> Nigdy nie stawiaj diagnozy. Działaj w ramach etyki zawodu psychologa.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Sterowanie Stylem:</strong> Możesz użyć na końcu polecenia parametru Styl: (Rodzic, Kliniczny, Zwięzły).</li>
-                  <li><strong className="text-900 dark:text-gray-50">Wybór Perspektywy:</strong> Możesz użyć parametru Perspektywa: (CBT, Systemowa, itp.). Na końcu takiej odpowiedzi zawsze dodawaj ostrzeżenie o ryzyku uproszczenia.</li>
+                  <li><strong className="text-gray-900 dark:text-gray-50">Wybór Perspektywy:</strong> Możesz użyć parametru Perspektywa: (CBT, Systemowa, itp.). Na końcu takiej odpowiedzi zawsze dodawaj ostrzeżenie o ryzyku uproszczenia.</li>
                   <li><strong className="text-gray-900 dark:text-gray-50">Zasada Weryfikowalności:</strong> Gdy generujesz informacje faktograficzne (Mity i Fakty) lub sugerujesz zasoby (książki, autorów), zawsze dodawaj na końcu przypis: (Wskazówka dla specjalisty: Pamiętaj, aby zawsze zweryfikować poprawność merytoryczną tych informacji oraz istnienie i adekwatność sugerowanych zasobów przed ich wykorzystaniem.)</li>
                 </ul>
               </div>
@@ -209,16 +209,33 @@ const CVContent = () => {
         </Card>
 
         {/* Case Study 4 - New Project */}
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">4. Projekt "ADHiDe" (Gamifikowany System Produktywności)</CardTitle>
-          </CardHeader>
-          <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
-            <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Stworzenie angażującego narzędzia dla osób z ADHD, które wykracza poza standardowe listy "to-do".</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> W pełni funkcjonalna aplikacja webowa (React, TypeScript) z systemem gamifikacji (XP, poziomy), zarządzaniem zadaniami i dziennikiem analitycznym nastroju.</p>
-            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Zaawansowany Frontend (React, TypeScript), Projektowanie UI/UX i Gamifikacji, Zarządzanie Stanem Aplikacji.</p>
-          </CardContent>
-        </Card>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005] cursor-pointer">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">4. Projekt "ADHiDe" (Gamifikowany System Produktywności)</CardTitle>
+              </CardHeader>
+              <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
+                <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Stworzenie angażującego narzędzia dla osób z ADHD, które wykracza poza standardowe listy "to-do".</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> W pełni funkcjonalna aplikacja webowa (React, TypeScript) z systemem gamifikacji (XP, poziomy), zarządzaniem zadaniami i dziennikiem analitycznym nastroju.</p>
+                <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Zaawansowany Frontend (React, TypeScript), Projektowanie UI/UX i Gamifikacji, Zarządzanie Stanem Aplikacji.</p>
+              </CardContent>
+            </Card>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[800px] max-h-[90vh] overflow-y-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-2xl">
+            <DialogHeader className="mb-4">
+              <DialogTitle className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center">Projekt "ADHiDe"</DialogTitle>
+              <DialogDescription className="text-center text-gray-600 dark:text-gray-400">
+                Przykładowe grafiki z gamifikowanego systemu produktywności ADHiDe.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col gap-4 items-center">
+              <img src="/images/ADHiDe1.png" alt="ADHiDe 1" className="w-full h-auto rounded-lg shadow-md object-cover" />
+              <img src="/images/ADHiDe2.png" alt="ADHiDe 2" className="w-full h-auto rounded-lg shadow-md object-cover" />
+              <img src="/images/ADHiDe3.png" alt="ADHiDe 3" className="w-full h-auto rounded-lg shadow-md object-cover" />
+            </div>
+          </DialogContent>
+        </Dialog>
 
         {/* Case Study 5 (formerly Case Study 4) */}
         <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
@@ -228,7 +245,7 @@ const CVContent = () => {
           <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
             <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zdiagnozowanie i stworzenie systemu do zarządzania złożonymi wzorcami poznawczymi.</p>
             <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Stworzenie analitycznego dokumentu, który doprowadził do formalnej diagnozy ADHD i wdrożenia skutecznych strategii.</p>
-            <p><strong className="text-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Elitarna zdolność do dekonstrukcji "brudnych", nieliniowych problemów i przekształcania wglądu w ustrukturyzowane, działające systemy.</p>
+            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Elitarna zdolność do dekonstrukcji "brudnych", nieliniowych problemów i przekształcania wglądu w ustrukturyzowane, działające systemy.</p>
           </CardContent>
         </Card>
       </div>
