@@ -66,10 +66,22 @@ const CVContent = () => {
           </CardContent>
         </Card>
 
-        {/* Case Study 3 */}
+        {/* Case Study 3 - New Project */}
         <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
           <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">3. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">3. Projekt "Eksperci od Klimatyzacji" (Kompleksowa Aplikacja Webowa Full-Stack)</CardTitle>
+          </CardHeader>
+          <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
+            <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Stworzenie wszechstronnej platformy online dla firmy klimatyzacyjnej, integrującej interaktywne narzędzia dla klientów z zaawansowanym panelem administracyjnym.</p>
+            <p><strong className="text-gray-900 dark:text-gray-50">Rezultat:</strong> Zaprojektowałem i wdrożyłem pełną aplikację webową (React.js, TypeScript, Node.js, Express.js, PostgreSQL/Supabase), zawierającą publiczny serwis z kalkulatorem cen i porównywarką modeli, oraz rozbudowany CMS do zarządzania treścią bloga, formularzami i zgłoszeniami serwisowymi, w tym obsługą załączników.</p>
+            <p><strong className="text-gray-900 dark:text-gray-50">Demonstracja Umiejętności:</strong> Rozwój full-stack, integracja z bazą danych (Supabase), budowa niestandardowego CMS i implementacja interaktywnych narzędzi użytkownika.</p>
+          </CardContent>
+        </Card>
+
+        {/* Case Study 4 (formerly Case Study 3) */}
+        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+          <CardHeader className="pb-4">
+            <CardTitle className="text-2xl font-semibold text-gray-800 dark:text-gray-100">4. Projekt "Operator's Manual" (Dekonstrukcja Problemu)</CardTitle>
           </CardHeader>
           <CardContent className="text-gray-700 dark:text-gray-300 text-lg space-y-2 text-justify">
             <p><strong className="text-gray-900 dark:text-gray-50">Wyzwanie:</strong> Zdiagnozowanie i stworzenie systemu do zarządzania złożonymi wzorcami poznawczymi.</p>
