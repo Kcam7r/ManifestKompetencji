@@ -105,6 +105,29 @@ const CVContent = () => {
         </CardContent>
       </Card>
 
+      <Separator className="my-10 bg-blue-200 dark:bg-blue-800 h-0.5" />
+
+      {/* Contact Section */}
+      <Card className="mb-10 shadow-xl border border-gray-200 dark:border-gray-700 rounded-lg">
+        <CardHeader className="pb-4">
+          <CardTitle className="text-3xl font-bold text-gray-800 dark:text-gray-100">Kontakt</CardTitle>
+        </CardHeader>
+        <CardContent className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg space-y-2">
+          <p>
+            Chętnie odpowiem na wszelkie pytania i omówię potencjalne projekty. Zapraszam do kontaktu!
+          </p>
+          <p>
+            <strong>Email:</strong> <a href="mailto:twoj.email@example.com" className="text-blue-600 hover:underline dark:text-blue-400">twoj.email@example.com</a>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/twojprofil" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">linkedin.com/in/twojprofil</a>
+          </p>
+          <p>
+            <strong>Telefon:</strong> +48 123 456 789
+          </p>
+        </CardContent>
+      </Card>
+
       {/* Made with Dyad component */}
       <div className="mt-12">
         <MadeWithDyad />
